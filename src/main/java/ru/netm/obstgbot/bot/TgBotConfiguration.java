@@ -20,7 +20,19 @@ public class TgBotConfiguration {
     private String name;
 
     public void setToken(String token) {
-        this.token = token;
+        if (!token.isEmpty()) {
+            this.token = token;
+        } else {
+            String envToken = System.getenv("bot_token");
+            if (!envToken.isEmpty()) {
+                this.token = envToken;
+            } else {
+                throw new RuntimeException("Bot token not found in environment");
+            }
+        }
+
+
+
     }
 
     @Bean

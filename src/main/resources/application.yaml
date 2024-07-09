@@ -3,4 +3,4 @@ spring:
     name: obsidian-telegram-bot
 bot:
   token:
-  name:
+  name: Echobotgb2051_bot
