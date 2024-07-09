@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: obsidian-telegram-bot
+bot:
+  token:
+  name:
