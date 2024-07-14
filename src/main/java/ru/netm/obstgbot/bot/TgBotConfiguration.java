@@ -30,9 +30,6 @@ public class TgBotConfiguration {
                 throw new RuntimeException("Bot token not found in environment");
             }
         }
-
-
-
     }
 
     @Bean

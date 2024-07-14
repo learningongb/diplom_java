@@ -4,3 +4,7 @@ spring:
 bot:
   token:
   name: Echobotgb2051_bot
+users:
+  xxxxxxxxx:
+    - /home/leniv/111
+    - /home/leniv/222
