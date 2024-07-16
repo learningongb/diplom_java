@@ -39,6 +39,7 @@ public class UserRepository {
         Long userId = tgUser.getId();
         List<String> currentUserPath = userConfiguration.getUsers().get(userId.toString());
         if (currentUserPath == null) {
+            log.info(String.format("Запрещен доступ пользователя %s %s", userId.toString(), tgUser.getUserName()));
             return Optional.empty();
         }
 

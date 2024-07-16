@@ -117,32 +117,6 @@ public class BotStateMachine extends EnumStateMachineConfigurerAdapter<BotState,
                     tgBot.printNoteList(chatId, noteRepository.findNotesByString(extendedState.get("searchString", String.class)));
                     break;
             }
-//            NoteRepository noteRepository = (NoteRepository)applicationContext.getBean("noteRepository");
-//            switch (payLoad) {
-//                case LIST_NOTES:
-//                    noteRepository.updateNoteList();
-//                    bot.printNotesList(noteRepository.getAllNotes());
-//                    break;
-//                case OPEN_NOTE:
-//                    bot.printNote(noteRepository.getAllNotes());
-//                    break;
-//                case FIND_NOTES:
-//                    bot.sendMessage("Строка поиска:");
-//                    break;
-//                case ENTER_SEARCH_STRING:
-//                    bot.printNotesList(noteRepository.find(bot.getSearchString(), false));
-//                    break;
-//                case FIND_TAGS:
-//                    bot.sendMessage("Тэг:");
-//                    break;
-//                case ENTER_SEARCH_STRING_TAG:
-//                    bot.printNotesList(noteRepository.findByTags(bot.getSearchString()));
-//                    break;
-//                case LIST_TAGS:
-//                    bot.printTagsList(noteRepository.getAllTags());
-//                    break;
-//                default: break;
-//            }
 
         }
     }
