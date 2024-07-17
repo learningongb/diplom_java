@@ -1,4 +1,4 @@
-package ru.netm.obstgbot.bot.notes;
+package ru.netm.obstgbot.notes;
 
 import lombok.*;
 

@@ -10,7 +10,6 @@ import java.util.Map;
 @Data
 @Configuration
 @ConfigurationProperties(prefix = "")
-public class UserConfiguration {
+public class UserConfigurationSpring {
     private Map<String, List<String>> users;
-
 }

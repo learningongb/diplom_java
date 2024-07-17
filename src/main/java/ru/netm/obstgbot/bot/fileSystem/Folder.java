@@ -1,7 +1,5 @@
 package ru.netm.obstgbot.bot.fileSystem;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -16,10 +14,6 @@ public class Folder extends FileObject {
 
     public Folder(String name, String path) {
         super(name, path);
-    }
-
-    public void addFile(File file) {
-        files.add(file);
     }
 
     @Override

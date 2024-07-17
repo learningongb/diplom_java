@@ -1,9 +1,7 @@
-package ru.netm.obstgbot.bot.notes;
+package ru.netm.obstgbot.notes;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import ru.netm.obstgbot.bot.fileSystem.File;
 import ru.netm.obstgbot.bot.fileSystem.FileObject;
 import ru.netm.obstgbot.bot.fileSystem.Folder;
@@ -17,7 +15,6 @@ import java.util.*;
 @RequiredArgsConstructor
 public class NoteRepository {
 
-    private static final Logger log = LoggerFactory.getLogger(NoteRepository.class);
     private final List<String> paths;
     private List<FileObject> fileObjectList;
     private List<String> tagList;

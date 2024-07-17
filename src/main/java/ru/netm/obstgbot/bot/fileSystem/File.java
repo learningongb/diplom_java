@@ -1,8 +1,7 @@
 package ru.netm.obstgbot.bot.fileSystem;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import ru.netm.obstgbot.bot.notes.Note;
+import ru.netm.obstgbot.notes.Note;
 
 @Data
 public class File extends FileObject {

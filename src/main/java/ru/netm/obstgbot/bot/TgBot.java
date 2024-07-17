@@ -11,7 +11,6 @@ import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
-import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.InlineKeyboardButton;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardRow;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import ru.netm.obstgbot.bot.core.BotCommand;
@@ -20,11 +19,10 @@ import ru.netm.obstgbot.bot.core.BotState;
 import ru.netm.obstgbot.bot.fileSystem.File;
 import ru.netm.obstgbot.bot.fileSystem.FileObject;
 import ru.netm.obstgbot.bot.fileSystem.Folder;
-import ru.netm.obstgbot.bot.notes.Note;
+import ru.netm.obstgbot.notes.Note;
 import ru.netm.obstgbot.bot.users.User;
 import ru.netm.obstgbot.bot.users.UserRepository;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -162,7 +160,6 @@ public class TgBot extends TelegramLongPollingBot {
     public void printNoteList(Long chatId, List<FileObject> fileList) {
         StringBuilder sb = new StringBuilder();
         addFiles(sb, fileList, 0);
-        log.info(sb.toString());
         sendMessage(chatId, sb.toString());
     }
 

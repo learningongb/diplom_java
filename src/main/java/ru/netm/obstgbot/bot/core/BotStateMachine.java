@@ -8,8 +8,8 @@ import org.springframework.statemachine.config.EnumStateMachineConfigurerAdapter
 import org.springframework.statemachine.config.builders.StateMachineStateConfigurer;
 import org.springframework.statemachine.config.builders.StateMachineTransitionConfigurer;
 import ru.netm.obstgbot.bot.TgBot;
-import ru.netm.obstgbot.bot.notes.Note;
-import ru.netm.obstgbot.bot.notes.NoteRepository;
+import ru.netm.obstgbot.notes.Note;
+import ru.netm.obstgbot.notes.NoteRepository;
 import ru.netm.obstgbot.bot.users.User;
 
 import java.util.EnumSet;

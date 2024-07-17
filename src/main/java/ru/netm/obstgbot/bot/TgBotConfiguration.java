@@ -1,6 +1,5 @@
 package ru.netm.obstgbot.bot;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -24,7 +23,7 @@ public class TgBotConfiguration {
             this.token = token;
         } else {
             String envToken = System.getenv("bot_token");
-            if (!envToken.isEmpty()) {
+            if (envToken != null && !envToken.isEmpty()) {
                 this.token = envToken;
             } else {
                 throw new RuntimeException("Bot token not found in environment");
